@@ -1,6 +1,6 @@
 <template>
 	<v-card>
-		<v-card-title>Agregar una producto</v-card-title>
+		<v-card-title>Agregar producto</v-card-title>
 		<v-card-text>
 			<v-form @submit.prevent="submit">
 				<v-text-field label="Nombre" prepend-icon="mdi-tag-text-outline" />
