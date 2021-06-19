@@ -1,6 +1,6 @@
 <template>
 	<v-card>
-		<v-card-title>Formulario para agregar una nueva persona</v-card-title>
+		<v-card-title>Agregar persona</v-card-title>
 		<v-card-text>
 			<v-form @submit.prevent="submit">
 				<v-select :items="types" item-text="name" label="Tipo de persona" />
@@ -25,7 +25,9 @@
 			types: TYPES,
 		}),
 		methods: {
-			submit() {},
+			submit() {
+        console.log('xd')
+      },
 		},
 	};
 </script>

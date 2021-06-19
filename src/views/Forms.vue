@@ -7,7 +7,7 @@
 
 <script>
 	import ToolbarNavForm from '../components/form/ToolbarNavForm';
-	import PersonRegister from '../components/Person/PersonRegister';
+	import PersonRegister from '../components/form/PersonRegister';
 	export default {
 		name: 'Forms',
 		components: {
