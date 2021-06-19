@@ -1,4 +1,5 @@
 <template>
+  <h1>Pero que pasa chavales</h1>
 </template>
 
 <script lang="ts">

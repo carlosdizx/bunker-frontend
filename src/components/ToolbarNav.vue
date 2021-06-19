@@ -1,8 +1,11 @@
 <template>
-	<v-app-bar app color="orange" dark>
-		<v-toolbar-title class="mr-12">Bunker</v-toolbar-title>
+	<v-app-bar app color="indigo" dark>
+		<v-toolbar-title class="mr-8"><v-btn text>Bunker</v-btn></v-toolbar-title>
 		<v-btn icon>
-			<v-icon>mdi-point-of-sale</v-icon>
+			<v-icon>mdi-plus-circle-outline</v-icon>
+		</v-btn>
+		<v-btn icon>
+			<v-icon>mdi-cash-register</v-icon>
 		</v-btn>
 		<v-btn icon>
 			<v-icon>mdi-account</v-icon>
@@ -10,7 +13,7 @@
 		<v-btn icon>
 			<v-icon>mdi-food</v-icon>
 		</v-btn>
-    <v-btn icon>
+		<v-btn icon>
 			<v-icon>mdi-google-analytics</v-icon>
 		</v-btn>
 	</v-app-bar>
