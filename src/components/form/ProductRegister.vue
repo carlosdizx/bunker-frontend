@@ -8,24 +8,20 @@
 				<v-text-field label="Precio de venta" prepend-icon="mdi-cash-plus" />
 			</v-form>
 		</v-card-text>
-    <v-card-actions>
-      <v-btn @click="submit" color="info">Registrar</v-btn>
-    </v-card-actions>
+		<v-card-actions>
+			<v-btn @click="submit" color="info">Registrar</v-btn>
+		</v-card-actions>
 	</v-card>
 </template>
 
 <script>
-	import { TYPES } from '../../global/itemsFormPerson';
-
 	export default {
 		name: 'PersonRegister',
-		data: () => ({
-			types: TYPES,
-		}),
+		data: () => ({}),
 		methods: {
 			submit() {
-        console.log('xd')
-      },
+				console.log('xd');
+			},
 		},
 	};
 </script>
