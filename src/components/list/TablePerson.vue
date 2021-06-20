@@ -23,7 +23,7 @@
 	</v-card>
 </template>
 
-<script lang="ts">
+<script>
 	import { LIST_PERSON } from '@/services/ResourceService';
 	export default {
 		name: 'TablePerson',
@@ -42,10 +42,10 @@
 		}),
 		mounted() {
 			this.list_products()
-				.then((response: any) => {
+				.then((response) => {
 					this.list = response.data;
 				})
-				.catch((error: any) => console.log(error));
+				.catch((error) => console.log(error));
 		},
 	};
 </script>
