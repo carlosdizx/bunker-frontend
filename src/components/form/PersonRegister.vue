@@ -10,24 +10,32 @@
 				<v-text-field label="Correo" prepend-icon="mdi-email" />
 			</v-form>
 		</v-card-text>
-    <v-card-actions>
-      <v-btn @click="submit" color="info">Registrar</v-btn>
-    </v-card-actions>
+		<v-card-actions>
+			<v-btn @click="submit" color="info">Registrar</v-btn>
+		</v-card-actions>
 	</v-card>
 </template>
 
 <script>
 	import { TYPES } from '../../global/itemsFormPerson';
+	import { REGISTER_PERSON } from "../../services/ResourceService";
 
-	export default {
+  export default {
 		name: 'PersonRegister',
 		data: () => ({
 			types: TYPES,
+			person: {
+				name: '',
+				type: '',
+				address: '',
+				phone: '',
+				email: '',
+			},
 		}),
 		methods: {
 			submit() {
-        console.log('xd')
-      },
+        REGISTER_PERSON(this.person);
+			},
 		},
 	};
 </script>
