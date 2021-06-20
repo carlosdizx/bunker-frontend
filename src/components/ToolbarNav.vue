@@ -1,9 +1,11 @@
 <template>
 	<v-app-bar app color="indigo" dark>
 		<v-toolbar-title class="mr-8"><v-btn text>Bunker</v-btn></v-toolbar-title>
-		<v-btn icon>
-			<v-icon>mdi-plus-circle-outline</v-icon>
-		</v-btn>
+    <router-link to="/forms" v-slot="{navigate}" custom>
+      <v-btn icon @click="navigate" role="link">
+        <v-icon>mdi-plus-circle-outline</v-icon>
+      </v-btn>
+    </router-link>
 		<v-btn icon>
 			<v-icon>mdi-cash-register</v-icon>
 		</v-btn>
