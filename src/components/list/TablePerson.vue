@@ -1,5 +1,5 @@
 <template>
-	<v-card>
+	<v-card dark>
 		<v-card-title>Listado de personas</v-card-title>
 		<v-data-table
 			:headers="columnas"
@@ -26,7 +26,7 @@
 <script lang="ts">
 	import { LIST_PERSON } from '@/services/ResourceService';
 	export default {
-		name: 'TableCRUD',
+		name: 'TablePerson',
 		data: () => ({
 			columnas: [
 				{ text: 'ID', value: 'id' },
@@ -38,11 +38,10 @@
 				{ text: 'Fecha Registro', value: 'created' },
 			],
 			list: [],
-			list_persons: LIST_PERSON,
+			list_products: LIST_PERSON,
 		}),
-		components: {},
 		mounted() {
-			this.list_persons()
+			this.list_products()
 				.then((response: any) => {
 					this.list = response.data;
 				})

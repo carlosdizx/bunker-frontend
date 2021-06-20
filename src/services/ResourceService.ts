@@ -1,6 +1,8 @@
 import { CLIENTE } from './axios';
 import router from '@/router';
 
+//--------------------- Person ---------------------
+
 export const REGISTER_PERSON = (person: {
 	address: string;
 	phone: string;
@@ -10,3 +12,13 @@ export const REGISTER_PERSON = (person: {
 }) => CLIENTE.post('person/all', person);
 
 export const LIST_PERSON = () => CLIENTE.get('person/all');
+
+//--------------------- Product ---------------------
+
+export const REGISTER_PRODUCT = (product: {
+	name: String;
+	costPrice: number;
+	salePrice: number;
+}) => CLIENTE.post('product/all', product);
+
+export const LIST_PRODUCTS = () => CLIENTE.get('product/all');

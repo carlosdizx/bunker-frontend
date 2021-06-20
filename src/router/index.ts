@@ -20,6 +20,11 @@ const routes: Array<RouteConfig> = [
 		name: 'Forms',
 		component: () => import('../views/Forms.vue'),
 	},
+	{
+		path: '/list',
+		name: 'List',
+		component: () => import('../views/List.vue'),
+	},
 ];
 
 const router = new VueRouter({

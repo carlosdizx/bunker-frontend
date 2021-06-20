@@ -47,9 +47,7 @@
 
 	export default {
 		name: 'PersonRegister',
-		components: {
-			DialogInfo,
-		},
+		components: { DialogInfo },
 		data: () => ({
 			types: TYPES,
 			dialog: false,
