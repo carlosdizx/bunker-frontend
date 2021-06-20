@@ -8,14 +8,15 @@
     "dev": "vue-cli-service serve --open"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "5.9.55",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "roboto-fontface": "*",
     "vee-validate": "^3.4.9",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
+    "vue-moment": "^4.1.0",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.2.0",
     "vuetify": "^2.4.0",

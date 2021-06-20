@@ -1,22 +1,16 @@
 <template>
-	<h1>Pero que pasa chavales</h1>
+  <TableCRUD></TableCRUD>
 </template>
 
 <script lang="ts">
-	import { LIST_PERSON } from '@/services/ResourceService';
+import TableCRUD from '@/components/person/TableCRUD'
+	const moment = require('moment');
+	require('moment/locale/es');
 
 	export default {
 		name: 'Home',
-		data: () => ({
-			list_persons: LIST_PERSON,
-		}),
-		components: {},
-		created() {
-			LIST_PERSON()
-				.then((response: any) => {
-					console.log(response);
-				})
-				.catch((error: any) => console.log(error));
-		},
+    components:{
+      TableCRUD
+    }
 	};
 </script>
