@@ -11,7 +11,9 @@ export const REGISTER_PERSON = (person: {
 	email: string;
 }) => CLIENTE.post('person/all', person);
 
-export const LIST_PERSON = () => CLIENTE.get('person/all');
+export const LIST_PERSONS_CLIENTS = () => CLIENTE.get('person/all/Cliente');
+
+export const LIST_PERSONS = () => CLIENTE.get('person/all');
 
 //--------------------- Product ---------------------
 

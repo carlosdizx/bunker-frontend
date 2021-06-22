@@ -24,7 +24,7 @@
 </template>
 
 <script>
-	import { LIST_PERSON } from '@/services/ResourceService';
+	import { LIST_PERSONS,LIST_PERSONS_CLIENTS } from '@/services/ResourceService';
 	export default {
 		name: 'TablePerson',
 		data: () => ({
@@ -38,10 +38,10 @@
 				{ text: 'Fecha Registro', value: 'created' },
 			],
 			list: [],
-			list_products: LIST_PERSON,
+			listPersons: LIST_PERSONS,
 		}),
 		mounted() {
-			this.list_products()
+			this.listPersons()
 				.then((response) => {
 					this.list = response.data;
 				})

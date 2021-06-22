@@ -17,17 +17,24 @@
 </template>
 
 <script>
-	import { EXAMPLES_NAMES } from '../../global/itemsFormPerson';
-
+import {LIST_PERSONS_CLIENTS} from "../../services/ResourceService";
 	export default {
 		name: 'PersonRegister',
 		data: () => ({
-			names: EXAMPLES_NAMES,
+			names: [],
+      listPersons: LIST_PERSONS_CLIENTS,
 		}),
 		methods: {
 			submit() {
         console.log('xd')
       },
 		},
+    mounted() {
+      this.listPersons()
+          .then((response) => {
+            this.names = response.data;
+          })
+          .catch((error) => console.log(error));
+    },
 	};
 </script>
